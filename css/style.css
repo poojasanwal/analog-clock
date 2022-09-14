@@ -1,0 +1,56 @@
+body{
+    display:flex; /*it is needed for justify content and align items to work*/
+    justify-content: center; /*for centering the clock horizontally */
+    align-items: center; /*for centering the clock vertically */
+    height: 100vh; /*needed for align items to work */
+    background-color: rgb(43, 43, 43);
+}
+
+.clock{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    border: solid 5px rgb(252, 255, 55);
+    position: absolute;
+}
+
+#seconds-hand{
+    position: absolute;
+    height: 130px;
+    width: 2px;
+    background-color: rgb(70, 255, 255);
+    left: 149px;
+    bottom: 149px;
+    opacity: 50%;
+    transform-origin: 0 100%;
+}
+
+#minutes-hand{
+    height: 100px;
+    width: 2px;
+    background-color: rgb(253, 120, 227);
+    position: absolute;
+    left: 149px;
+    bottom: 149px;
+    transform-origin: 0 100%;
+}
+
+#hours-hand{
+    height: 80px;
+    width: 4px;
+    background-color: rgb(205, 112, 255);
+    position: absolute;
+    left: 148px;
+    bottom: 148px;
+    transform-origin: 0 100%;
+}
+
+#center{
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: rgb(95, 95, 49);
+    position: absolute;
+    left: 145px;
+    bottom: 145px;
+}
